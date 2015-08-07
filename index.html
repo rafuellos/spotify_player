@@ -1,31 +1,56 @@
 <html>
 <head>
-	<title></title>
+	<title>Spotify Song Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="box">
+	  <div>
+	  	<h2 class="title_search">Search your favourtie song in Spotify</h2>
+	  	<input type="text" name="song_search" class="song_search" value="hello" placeholder="Search a song" autofocus>
+	  	<button class="search_button">New Song Search</button>
+	  </div> 
+		<div class="results hidden">
+		  
+		</div>
+	</div>  
+
+
 	<div class="widget">
 		<div class="header">
-		<!-- Try adding/removing these classes: -->
-		<!-- disabled -->
-		<!-- playing -->
-		<div class="btn-play disabled"></div>
+			<!-- Try adding/removing these classes: -->
+			<!-- disabled -->
+			<!-- playing -->
+			<div class="btn-play disabled" id="play_song"></div>
 
-		<div class="metadata">
-		  <p class="title">Hunger of The Pine</p>
-		  <p class="author">alt-J</p>
+			<div class="metadata">
+			  <p class="title" id="title">Search a song!</p>
+			  <p class="author" id="author" >by Rafa</p>
 
-		  <div class="seekbar">
-		    <progress value="5" max="30"></progress>
-		  </div>
-		</div>
+			  <div class="seekbar">
+			    <progress id="progress" value="0" max="30"></progress>
+			  </div>
+			</div>
 		</div>
 		<div class="cover">
-		<img src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+			<img id="cover" src="">
 		</div>
 
-		<audio src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+		<audio id="audio_preview" class="pause" timeupdate currentTime src=""></audio>
 	</div>
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./spotify.js"></script> 
 </body>
 </html>

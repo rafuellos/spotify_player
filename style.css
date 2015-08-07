@@ -1,6 +1,10 @@
+body {
+  font-family: roboto;
+}
+
 .widget {
   width: 300px;
-  margin: 10px auto 0;
+  margin: 10px 700px 0;
   border-radius: 5px;
   overflow: hidden;
   display: block;
@@ -152,4 +156,73 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
   background-color: #45a800;
+}
+
+
+
+.box {
+  margin: 0px 80px 0;
+  height: 78px;
+  width: 550px;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #c3c3c3;
+
+}
+
+.search_button {
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: green;
+  color: white;
+}
+
+.song_search {
+  border: 1px solid green;
+  border-radius: 2px;
+  text-align: center;
+
+  width: 300px;
+  margin-left: 80px;
+
+}
+
+.results {
+  position: relative;
+  padding: 25px 80px 0;
+  width: 550px;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  cursor: default;
+  overflow: hidden;
+
+}
+
+
+.title_search {
+  font-size: 20px;
+  text-align: center;
+  color: green;
+  margin-top: 5px;
+}
+
+.songCover {
+  width: 200px;
+  margin-left: 10px;
+
+}
+
+.lead {
+  font-size: 16px;
+  color: green;
+}
+
+.listen_track {
+  border: 1px solid green;
+  border-radius: 2px;
+  padding:0 5px;
+  text-align: center;
+  cursor: pointer;
+  margin
+
 }
