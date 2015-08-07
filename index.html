@@ -14,10 +14,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="padding"></div>
 	<div class="box">
-	  <div>
+	  <div class="box_head">
 	  	<h2 class="title_search">Search your favourtie song in Spotify</h2>
-	  	<input type="text" name="song_search" class="song_search" value="hello" placeholder="Search a song" autofocus>
+	  	<input type="text" name="song_search" class="song_search" placeholder="Search a song" autofocus>
 	  	<button class="search_button">New Song Search</button>
 	  </div> 
 		<div class="results hidden">
@@ -35,7 +36,7 @@
 
 			<div class="metadata">
 			  <p class="title" id="title">Search a song!</p>
-			  <a href="#" id="link_artist"><p class="author" id="author" >by Rafa</p></a>
+			  <a href="#" id="link_artist" data_artist=""><p class="author" id="author" >by Rafa</p></a>
 
 			  <div class="seekbar">
 			    <progress id="progress" value="0" max="30"></progress>
