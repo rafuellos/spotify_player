@@ -226,3 +226,10 @@ progress::-moz-progress-bar {
   margin
 
 }
+
+.artist_image {
+  width: 200px;
+  margin-left: 10px;
+}
+
+

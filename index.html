@@ -35,7 +35,7 @@
 
 			<div class="metadata">
 			  <p class="title" id="title">Search a song!</p>
-			  <p class="author" id="author" >by Rafa</p>
+			  <a href="#" id="link_artist"><p class="author" id="author" >by Rafa</p></a>
 
 			  <div class="seekbar">
 			    <progress id="progress" value="0" max="30"></progress>
@@ -48,6 +48,27 @@
 
 		<audio id="audio_preview" class="pause" timeupdate currentTime src=""></audio>
 	</div>
+
+	<div class="modal fade js-modal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <!-- Close button -->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span>&times;</span>
+	        </button>
+
+	        <h2 class="modal-header-info">This is the modal's header.</h2>
+	      </div>
+
+	      <div class="modal-body">
+	        <p>This is the modal's body.</p>
+	      </div>
+
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
